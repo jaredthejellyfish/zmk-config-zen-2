@@ -5,3 +5,6 @@ modules/
 tools/
 .west/
 build/*
+.venv/
+firmware/
+*.uf2
