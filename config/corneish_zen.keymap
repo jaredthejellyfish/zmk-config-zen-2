@@ -22,6 +22,20 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+
+        move_left: move_left {
+            compatible = "zmk,behavior-macro";
+            label = "MOVE_LEFT";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_press &kp LEFT>, <&macro_release &kp LEFT>, <&macro_release &kp LCTRL>;
+        };
+
+        move_right: move_right {
+            compatible = "zmk,behavior-macro";
+            label = "MOVE_RIGHT";
+            #binding-cells = <0>;
+            bindings = <&macro_press &kp LCTRL>, <&macro_press &kp RIGHT>, <&macro_release &kp RIGHT>, <&macro_release &kp LCTRL>;
+        };
     };
 
     keymap {
@@ -82,7 +96,7 @@
             display-name = "Fn";
             bindings = <
 &trans  &kp F1      &kp F2  &kp F3          &kp F4      &kp F5         &kp F6       &kp F7      &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &bt BT_CLR  &trans  &trans          &trans      &trans         &trans       &trans      &trans  &trans  &kp PRINTSCREEN  &kp F12
+&trans  &bt BT_CLR  &trans  &move_left      &move_right &trans         &trans       &trans      &trans  &trans  &kp PRINTSCREEN  &kp F12
 &trans  &trans      &trans  &studio_unlock  &sys_reset  &bootloader    &bootloader  &sys_reset  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                             &trans          &trans      &trans         &trans       &trans      &trans
             >;
