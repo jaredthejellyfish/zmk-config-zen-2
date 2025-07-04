@@ -6,7 +6,7 @@
 if BOARD_CORNEISH_ZEN_V2_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Corne-ish Zen"
+    default "ZenSplit"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
