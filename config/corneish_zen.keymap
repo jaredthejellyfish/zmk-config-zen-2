@@ -12,9 +12,7 @@
 
 / {
     chosen {
-        zmk,matrix_transform = &default_transform;
-
-        // zmk,matrix_transform = &five_column_transform;
+        zmk,physical_layout = &corneish_zen_layout;
     };
 };
 
