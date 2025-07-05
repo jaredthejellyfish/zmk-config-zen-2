@@ -1,0 +1,22 @@
+[
+    {
+        "prefix": "batt_",
+        "width": 40,
+        "height": 31
+    },
+    {
+        "prefix": "bluetooth_",
+        "width": 54,
+        "height": 35
+    },
+    {
+        "prefix": "USB_",
+        "width": 40,
+        "height": 31
+    },
+    {
+        "prefix": "zenlog",
+        "width": 48,
+        "height": 24
+    }
+]

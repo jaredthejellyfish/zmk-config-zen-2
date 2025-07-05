@@ -17,6 +17,12 @@ if not set -q VIRTUAL_ENV
     source .venv/bin/activate.fish
 end
 
+# Check if the firmware directory exists
+if test -d firmware
+    echo "firmware directory found, deleting..."
+    rm -rf firmware
+end
+
 # Set environment variables
 set -gx ZEPHYR_TOOLCHAIN_VARIANT gnuarmemb
 set -gx GNUARMEMB_TOOLCHAIN_PATH /Applications/ArmGNUToolchain/14.2.rel1/arm-none-eabi
