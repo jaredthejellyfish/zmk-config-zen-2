@@ -9,3 +9,4 @@ build/*
 firmware/
 *.uf2
 .DS_Store
+lvgl/
